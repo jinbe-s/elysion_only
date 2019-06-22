@@ -34,7 +34,7 @@ h1 span {
 }
 
 .bg {
-  background: url(dog01.6a915253.jpg) center center no-repeat;
+  background: url(/dog01.6a915253.jpg) center center no-repeat;
   background-size: cover;
   height: 60vh;
   min-height: 300px;
@@ -126,4 +126,4 @@ h2.title {
   margin: auto;
 }
 
-/*# sourceMappingURL=js.00a46daa.css.map */
+/*# sourceMappingURL=/js.00a46daa.css.map */

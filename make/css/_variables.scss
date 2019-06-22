@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+// 表示を切り替える幅
+$break-point-width-pc: 980px;
+$break-point-width-sp: 767px;
+
+// デフォルトフォント
+$font-default: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', Osaka, Arial, sans-serif;
+// フォント：游ゴシック体
+$font-yu-gothic: '游ゴシック体', 'Yu Gothic', YuGothic, sans-serif;
+// フォント：游明朝体
+$font-yu-mincho: '游明朝体', 'Yu Mincho', YuMincho, serif;

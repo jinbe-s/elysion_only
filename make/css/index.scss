@@ -1,3 +1,7 @@
+@charset 'UTF-8';
+@import "variables";
+@import "mixins";
+
 $base: #e4f9f5;
 $green: #30e3ca;
 $dgreen: #11999e;
@@ -24,6 +28,10 @@ body {
 
 h1 {
 	text-align: center;
+
+	@include media(sp) {
+		font-size: 20px;
+	}
 
 	span {
 		margin-left: 10px;
@@ -62,6 +70,10 @@ h2.title {
 .fig {
 	img {
 		vertical-align: bottom;
+
+		@include media(sp) {
+			max-width: 100%;
+		}
 	}
 
 	&.center {
@@ -78,11 +90,35 @@ h2.title {
 .block {
 	display: flex;
 
+	@include media(sp) {
+		display: block;
+	}
+
 	div + div {
 		padding-left: 30px;
+
+		@include media(sp) {
+			margin-top: 15px;
+			padding-left: 0;
+		}
 	}
 
 	.fig {
+		@include media(tab) {
+			width: 300px;
+		}
+
+		@include media(sp) {
+			text-align: center;
+			width: 100%;
+		}
+
+		img {
+			@include media(tab) {
+				max-width: 100%;
+			}
+		}
+
 		p {
 			font-size: 12px;
 			margin: auto;
@@ -91,6 +127,14 @@ h2.title {
 
 	.text {
 		box-sizing: border-box;
+
+		@include media(tab) {
+			width: calc(100% - 300px);
+		}
+
+		@include media(sp) {
+			width: 100%;
+		}
 
 		p {
 			margin: auto;

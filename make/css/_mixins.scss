@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+// clearfix
+@mixin clearfix {
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+// break-point
+@mixin media($point) {
+  @if $point == pc {
+    @media print, screen and (min-width: $break-point-width-pc) {
+      @content;
+    }
+  } @else if $point == tab {
+    @media screen and (max-width: $break-point-width-pc - 1) {
+      @content;
+    }
+  } @else if $point == sp {
+    @media screen and (max-width: $break-point-width-sp) {
+      @content;
+    }
+  }
+}
+
+// FontAwesome Icon
+@mixin fa($icon_name, $padding_left:0, $padding_right:0) {
+  font-family: FontAwesome;
+  content: $icon_name;
+  padding-left: $padding_left;
+  padding-right: $padding_right;
+}
