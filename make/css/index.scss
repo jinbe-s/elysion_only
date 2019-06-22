@@ -1,0 +1,99 @@
+$base: #e4f9f5;
+$green: #30e3ca;
+$dgreen: #11999e;
+$dark: #40514e;
+
+html,
+body {
+	background-color: $base;
+	box-sizing: border-box;
+	color: $dark;
+	font-size: 15px;
+	line-height: 1.6;
+	margin: 0 0 20px;
+	padding: 0;
+}
+
+.inner {
+	box-sizing: border-box;
+	margin: auto;
+	max-width: 800px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+h1 {
+	text-align: center;
+
+	span {
+		margin-left: 10px;
+	}
+}
+
+.top_lead {
+	text-align: center;
+}
+
+// 背景エリア
+.bg {
+	background: url(../images/dog01.jpg) center center no-repeat;
+	background-size: cover;
+	height: 60vh;
+	min-height: 300px;
+	width: 100%;
+}
+
+section {
+	box-sizing: border-box;
+	margin-top: 15px;
+
+	+ section {
+		margin-top: 45px;
+	}
+}
+
+h2.title {
+	box-sizing: border-box;
+	border-left: 5px solid $green;
+	margin: 20px auto;
+	padding-left: 10px;
+}
+
+.fig {
+	img {
+		vertical-align: bottom;
+	}
+
+	&.center {
+		text-align: center;
+	}
+
+	.text {
+		font-size: 12px;
+		margin: auto;
+	}
+}
+
+// 会話ブロック
+.block {
+	display: flex;
+
+	div + div {
+		padding-left: 30px;
+	}
+
+	.fig {
+		p {
+			font-size: 12px;
+			margin: auto;
+		}
+	}
+
+	.text {
+		box-sizing: border-box;
+
+		p {
+			margin: auto;
+		}
+	}
+}
