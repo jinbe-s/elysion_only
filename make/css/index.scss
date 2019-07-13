@@ -68,7 +68,9 @@ h2.title {
 }
 
 .fig {
+
 	img {
+		max-width: 100%;
 		vertical-align: bottom;
 
 		@include media(sp) {
@@ -108,6 +110,10 @@ h2.title {
 			width: 300px;
 		}
 
+		&.center {
+			margin: auto;
+		}
+
 		@include media(sp) {
 			text-align: center;
 			width: 100%;
@@ -127,10 +133,7 @@ h2.title {
 
 	.text {
 		box-sizing: border-box;
-
-		@include media(tab) {
-			width: calc(100% - 300px);
-		}
+		width: 100%;
 
 		@include media(sp) {
 			width: 100%;
@@ -138,6 +141,73 @@ h2.title {
 
 		p {
 			margin: auto;
+
+			+ p {
+				margin-top: 1em;
+			}
+		}
+	}
+}
+
+
+// 詳細ブロック
+.detail {
+	width: 50%;
+
+	@include media(sp) {
+		width: 100%;
+	}
+
+	.button {
+		margin: auto;
+		padding-left: 0;
+		text-align: center;
+
+		+ .button {
+			margin-top: 20px;
+		}
+
+		a {
+			background: $dark;
+			border: 1px solid $dark;
+			border-radius: 5px;
+			box-sizing: border-box;
+			color: #fff;
+			display: block;
+			margin: auto;
+			padding: 10px 0;
+			text-align: center;
+			text-decoration: none;
+			width: 300px;
+
+			&:hover {
+				background: $base;
+				color: $dark;
+			}
+		}
+	}
+
+	table {
+		border: 1px solid #ccc;
+		border-collapse: collapse;
+		width: 100%;
+
+		tr {
+			&:nth-child(odd) {
+				background-color: #fff;
+			}
+
+			&:nth-child(even) {
+				background-color: $base;
+			}
+		}
+
+		th,
+		td {
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			font-weight: normal;
+			padding: 5px;
 		}
 	}
 }
