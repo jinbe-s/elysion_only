@@ -73,6 +73,28 @@ h2.title {
   margin: auto;
 }
 
+.menu {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  max-width: 450px;
+  padding: 20px;
+  width: 100%;
+}
+.menu p {
+  margin: auto;
+}
+.menu ul {
+  margin: 1em auto 0;
+  padding-left: 1em;
+}
+.menu a {
+  color: #000;
+}
+.menu a:hover {
+  text-decoration: none;
+}
+
 .block {
   display: flex;
 }
@@ -124,13 +146,8 @@ h2.title {
   margin-top: 1em;
 }
 
-.detail {
-  width: 50%;
-}
-@media screen and (max-width: 767px) {
-  .detail {
-    width: 100%;
-  }
+.detail + .detail {
+  margin-top: 15px;
 }
 .detail .button {
   margin: auto;
@@ -158,15 +175,10 @@ h2.title {
   color: #40514e;
 }
 .detail table {
+  background-color: #fff;
   border: 1px solid #ccc;
   border-collapse: collapse;
   width: 100%;
-}
-.detail table tr:nth-child(odd) {
-  background-color: #fff;
-}
-.detail table tr:nth-child(even) {
-  background-color: #e4f9f5;
 }
 .detail table th,
 .detail table td {
@@ -174,6 +186,18 @@ h2.title {
   box-sizing: border-box;
   font-weight: normal;
   padding: 5px;
+}
+.detail table.schedule {
+  border: 0;
+  width: auto;
+}
+.detail table.schedule th,
+.detail table.schedule td {
+  border: 0;
+  padding: 0;
+}
+.detail table.schedule th {
+  width: 70px;
 }
 
 /*# sourceMappingURL=/js.00a46daa.css.map */

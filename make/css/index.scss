@@ -88,6 +88,34 @@ h2.title {
 	}
 }
 
+// メニュー
+.menu {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	max-width: 450px;
+	padding: 20px;
+	width: 100%;
+
+	p {
+		margin: auto;
+	}
+
+	ul {
+		margin: 1em auto 0;
+		padding-left: 1em;
+	}
+
+	a {
+		color: #000;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+
 // 会話ブロック
 .block {
 	display: flex;
@@ -148,10 +176,9 @@ h2.title {
 
 // 詳細ブロック
 .detail {
-	width: 50%;
 
-	@include media(sp) {
-		width: 100%;
+	+ .detail {
+		margin-top: 15px;
 	}
 
 	.button {
@@ -184,19 +211,10 @@ h2.title {
 	}
 
 	table {
+		background-color: #fff;
 		border: 1px solid #ccc;
 		border-collapse: collapse;
 		width: 100%;
-
-		tr {
-			&:nth-child(odd) {
-				background-color: #fff;
-			}
-
-			&:nth-child(even) {
-				background-color: $base;
-			}
-		}
 
 		th,
 		td {
@@ -204,6 +222,21 @@ h2.title {
 			box-sizing: border-box;
 			font-weight: normal;
 			padding: 5px;
+		}
+
+		&.schedule {
+			border: 0;
+			width: auto;
+
+			th,
+			td {
+				border: 0;
+				padding: 0;
+			}
+
+			th {
+				width: 70px;
+			}
 		}
 	}
 }
