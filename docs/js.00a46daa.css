@@ -90,11 +90,6 @@ h2.title {
     padding-left: 0;
   }
 }
-@media screen and (max-width: 979px) {
-  .block .fig {
-    width: 300px;
-  }
-}
 .block .fig.center {
   margin: auto;
 }

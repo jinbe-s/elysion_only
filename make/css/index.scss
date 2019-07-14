@@ -106,10 +106,6 @@ h2.title {
 	}
 
 	.fig {
-		@include media(tab) {
-			width: 300px;
-		}
-
 		&.center {
 			margin: auto;
 		}
