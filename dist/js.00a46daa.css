@@ -188,6 +188,7 @@ h2.title {
   padding: 5px;
 }
 .detail table.schedule {
+  background-color: inherit;
   border: 0;
   width: auto;
 }
