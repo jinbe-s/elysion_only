@@ -201,4 +201,22 @@ h2.title {
   width: 70px;
 }
 
+.block .text p.master {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px auto;
+  cursor: pointer;
+}
+
+div.hidden {
+  box-sizing: border-box;
+  display: none;
+  padding: 10px 15px;
+}
+div.hidden .title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
 /*# sourceMappingURL=js.00a46daa.css.map */

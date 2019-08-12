@@ -194,7 +194,11 @@ module.hot.accept(reloadCSS);
 
 require("../css/index.scss");
 
-console.log('test');
+$(function () {
+  $('.master').on('click', function () {
+    $(this).next('.hidden').slideToggle();
+  });
+});
 },{"../css/index.scss":"css/index.scss"}],"../../../../../Users/saito/.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -223,7 +227,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51931" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57472" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,3 +1,7 @@
 import '../css/index.scss';
 
-console.log('test');
+$(function(){
+	$('.master').on('click', function(){
+		$(this).next('.hidden').slideToggle();
+	});
+});
